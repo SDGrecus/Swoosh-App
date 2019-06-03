@@ -105,9 +105,8 @@
                                         <rect key="frame" x="147.5" y="0.0" width="119" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhL-rE-dOC">
-                                        <rect key="frame" x="124.5" y="80" width="165" height="30"/>
+                                        <rect key="frame" x="126" y="80" width="162.5" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="165" id="Y1q-5N-Pev"/>
                                             <constraint firstAttribute="height" constant="30" id="rJN-b3-mMh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
@@ -164,6 +163,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="9zx-jn-Chx" eventType="touchUpInside" id="POm-TM-NTm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-Rj-Q3E">
                                 <rect key="frame" x="20" y="60" width="40" height="25"/>
@@ -197,6 +199,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cpp-Lg-PUU"/>
                     </view>
+                    <connections>
+                        <segue destination="Cr8-2o-dcl" kind="show" identifier="skillVCSegue" id="Hqn-HP-5Bs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMy-Y7-6VM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7uX-4D-XHL" userLabel="Exit" sceneMemberID="exit"/>
